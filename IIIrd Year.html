@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>III Week Time Table</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #eef3f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    table {
+      width: 100%;
+      max-width: 1100px;
+      border-collapse: collapse;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+
+    caption {
+      background-color: #2c3e50;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+      padding: 20px;
+      letter-spacing: 1px;
+    }
+
+    th, td {
+      padding: 15px 18px;
+      text-align: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    th {
+      background-color: #34495e;
+      color: #ffffff;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    td {
+      font-size: 15px;
+      background-color: #fafafa;
+      transition: background-color 0.3s ease;
+    }
+
+    tr:hover td {
+      background-color: #f1f9ff;
+    }
+
+    td[rowspan] {
+      font-weight: bold;
+      background-color: #ecf0f1;
+      color: #34495e;
+    }
+
+    td[colspan] {
+      background-color: #fff6db;
+      font-weight: bold;
+      color: #d35400;
+      font-style: italic;
+    }
+
+    .icon {
+      font-size: 16px;
+      margin-right: 5px;
+    }
+
+    @media (max-width: 768px) {
+      table {
+        font-size: 13px;
+      }
+
+      th, td {
+        padding: 10px;
+      }
+
+      caption {
+        font-size: 22px;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>III Week Time Table</caption>
+    <tr>
+      <th>Day</th>
+      <th>10:00 - 11:00</th>
+      <th>11:00 - 12:00</th>
+      <th>12:00 - 1:00</th>
+      <th>Lunch Break</th>
+      <th>2:00 - 3:00</th>
+      <th>3:00 - 4:00</th>
+      <th>4:00 - 5:00</th>
+    </tr>
+    <tr>
+      <td><b>Monday</b></td>
+      <td><span class="icon">📊</span>SMA / FSA</td>
+      <td><span class="icon">🧾</span>Tally</td>
+      <td><span class="icon">🌐</span>Web Programming</td>
+      <td rowspan="6"><b><u>Break</u></b><br>1:00 - 2:00</td>
+      <td><span class="icon">🖥️</span>PHP & MySQL</td>
+      <td><span class="icon">🎓</span>JKC</td>
+      <td><span class="icon">📚</span>Library</td>
+    </tr>
+    <tr>
+      <td><b>Tuesday</b></td>
+      <td><span class="icon">💼</span>Digital Marketing</td>
+      <td><span class="icon">🌐</span>Web Programming</td>
+      <td><span class="icon">🖥️</span>PHP & MySQL</td>
+      <td><span class="icon">🧾</span>Tally</td>
+      <td><span class="icon">📊</span>SMA / FSA</td>
+      <td><span class="icon">🎓</span>JKC</td>
+    </tr>
+    <tr>
+      <td><b>Wednesday</b></td>
+      <td><span class="icon">🌐</span>Web Programming</td>
+      <td><span class="icon">🧾</span>Tally</td>
+      <td><span class="icon">📈</span>Stock Market</td>
+      <td colspan="4"><b><i><u>📝 QUIZ</u></i></b></td>
+    </tr>
+    <tr>
+      <td><b>Thursday</b></td>
+      <td><span class="icon">🖥️</span>PHP & MySQL</td>
+      <td><span class="icon">🌐</span>Web Programming</td>
+      <td><span class="icon">💼</span>Digital Marketing</td>
+      <td><span class="icon">📈</span>Stock Market</td>
+      <td><span class="icon">🧾</span>Tally</td>
+      <td><span class="icon">📚</span>Library</td>
+    </tr>
+    <tr>
+      <td><b>Friday</b></td>
+      <td><span class="icon">💼</span>Digital Marketing</td>
+      <td><span class="icon">📈</span>Stock Market</td>
+      <td><span class="icon">🌐</span>Web Programming</td>
+      <td><span class="icon">🖥️</span>PHP & MySQL</td>
+      <td><span class="icon">📊</span>SMA / FSA</td>
+      <td><span class="icon">🌿</span>Environmental Education</td>
+    </tr>
+    <tr>
+      <td><b>Saturday</b></td>
+      <td><span class="icon">💼</span>Digital Marketing</td>
+      <td><span class="icon">📊</span>SMA / FSA</td>
+      <td><span class="icon">🧾</span>Tally</td>
+      <td><span class="icon">📈</span>Stock Market</td>
+      <td><span class="icon">🖥️</span>PHP & MySQL</td>
+      <td><span class="icon">🌿</span>Environmental Education</td>
+    </tr>
+  </table>
+
+</body>
+</html>
